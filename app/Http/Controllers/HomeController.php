@@ -23,6 +23,17 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard/home');
+        return view('home');
     }
+
+    public function chart()
+    {
+        return view('chart');
+    }
+
+    // public function book_borrow()
+    // {
+    //     return view('book_borrow');
+    // }
+
 }

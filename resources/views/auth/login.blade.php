@@ -115,7 +115,7 @@
 
                <div>
                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password ..." required autocomplete="new-password">
-
+                                
               </div>
 
 
@@ -123,7 +123,7 @@
 
 
                <button type="submit" class="btn btn-primary">
-Sign Up
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
                                 </button>
 
               <div class="clearfix"></div>

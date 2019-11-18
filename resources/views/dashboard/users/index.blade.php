@@ -49,7 +49,7 @@
                       <td>{{ $student->email }}</td>
                       <td>
                         @php
-                            $roles = App\role::where('id', $student->id)->get('name');
+                            $roles = App\role::where('id', $student->role_id)->get('name');
                         @endphp
 
                         @foreach ($roles as $role)
