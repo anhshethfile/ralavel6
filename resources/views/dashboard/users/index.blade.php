@@ -47,7 +47,16 @@
                       <td>{{ $student->id }}</td>
                       <td>{{ $student->name }}</td>
                       <td>{{ $student->email }}</td>
-                      <td>{{ $student->role_id }}</td>
+                      <td>
+                        @php
+                            $roles = App\role::where('id', $student->id)->get('name');
+                        @endphp
+
+                        @foreach ($roles as $role)
+                            {{$role->name}}
+                        @endforeach
+                      
+                      </td>
                       <td>{{ $student->is_active ==1 ? 'Active' : 'Not Active ' }}</td>
                       <td>{{ $student->created_at->diffForHumans() }}</td>
                       <td>{{ $student->updated_at->diffForHumans()}}</td>

@@ -3,6 +3,8 @@ namespace App\Http\Controllers;
 use App\AdminUsers;
 use App\Http\Requests\UsersRequest;
 use Illuminate\Http\Request;
+use App\Role;
+
 class AdminUsersController extends Controller
 {
     /**
